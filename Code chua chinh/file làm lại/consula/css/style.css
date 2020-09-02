@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5,
   border-width: 2px; }
 
 .text-black {
-  color: #ffffff !important; }
+  color: #000000 !important; }
 
 .bg-black {
   background: #000 !important; }
@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5,
   background: #333333; }
   @media (min-width: 768px) {
     .site-footer {
-      padding: 8em 0; } }
+      padding: 7em 0; } }
   .site-footer .border-top {
     border-top: 1px solid rgba(255, 255, 255, 0.1) !important; }
   .site-footer p {
@@ -194,6 +194,12 @@ h1, h2, h3, h4, h5,
   .bg-image > .container {
     position: relative;
     z-index: 1; }
+
+#xactor {
+  height: 50%;
+  width: 50%;
+  border-radius: 10%;
+}
 
 @media (max-width: 991.98px) {
   .img-md-fluid {
