@@ -538,8 +538,8 @@ h1, h2, h3, h4, h5,
   position: absolute;
   z-index: 100;
   width: 100%; }
-  .sticky-wrapper + .site-blocks-cover {
-    margin-top: 96px; }
+  /* .sticky-wrapper + .site-blocks-cover {
+    margin-top: 96px; } */
   .sticky-wrapper .site-navbar {
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
