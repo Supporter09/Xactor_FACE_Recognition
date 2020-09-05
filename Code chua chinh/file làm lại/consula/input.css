@@ -36,13 +36,22 @@ body {
     overflow: hidden;
 }
 
+.bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* font-style: rgba(255, 255, 252, 0.904) */
+}
+
 ul, nav{
     list-style: none;
     padding: 0;
 }
 
 a {
-    color: #fff;
+    color: #ff9933;
     text-decoration: none;
     cursor: pointer;
     opacity: 0.9;
@@ -168,7 +177,7 @@ input[type="search"] {
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
 
 .frame {
-	position: absolute;
+	/* position: absolute;
 	top: 50%;
 	left: 50%;
 	width: 400px;
@@ -179,7 +188,7 @@ input[type="search"] {
 	box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
 	overflow: hidden;
 	background: linear-gradient(to top right, darkmagenta 0%, hotpink 100%);
-	color: #333;
+	color: #333; */
 	font-family: "Open Sans", Helvetica, sans-serif;
 }
 
@@ -238,18 +247,19 @@ h1 {
 	display: block;
 	width: 140px;
 	height: 40px;
-	background: rgb(0, 0, 0);
-	color: #ff9933;
+	background: #ff9933;
+	color: #000000;
 	border-radius: 3px;
 	border: 0;
-	box-shadow: 0 3px 0 0 rgb(0, 0, 0);
+	/* box-shadow: 0 3px 0 0 rgb(0, 0, 0); */
 	transition: all 0.3s ease-in-out;
 	font-size: 16px;
 }
 
 .btn:hover {
-	background: rgb(0, 0, 0);
-	box-shadow: 0 3px 0 0 rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+    color: #ff9933;
+	/* box-shadow: 0 3px 0 0 rgb(0, 0, 0); */
 }
 
 #madeby {
