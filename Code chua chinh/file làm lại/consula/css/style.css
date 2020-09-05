@@ -28,7 +28,9 @@ h1, h2, h3, h4, h5,
   border-width: 2px; }
 
 .text-black {
-  color: #000000 !important; }
+  color: #ff9933 !important; 
+  font-size: 24px;
+}
 
 .bg-black {
   background: #000 !important; }
