@@ -3,7 +3,7 @@ import dlib
 import cv2
 
 # Đọc ảnh đầu vào
-image = cv2.imread('D:/Xactor_FACE_Recognition/news/news-0.png')
+image = cv2.imread('D:/Xactor_FACE_Recognition/Crawl_WEB/news/news-0.png')
 # print(image)
 # Khai báo việc sử dụng các hàm của dlib
 hog_face_detector = dlib.get_frontal_face_detector()

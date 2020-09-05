@@ -23,7 +23,8 @@ def crawNewsData(baseUrl, url):
             "born_date" : born_date,
             "image": image,
         })
-        print("craw " + name)
+        # print("craw " + name)
+        # print(born_date)
     return data
 
 
@@ -66,8 +67,8 @@ def makeFastNews(data):
         contentFont = ImageFont.truetype("font/arial.ttf", 20)
         writeToImage(image, item["born_date"], (10, 460), contentFont, "black", 11)
         name = "news-" + str(index) + ".png"
-        image.save("news/" + name)
-        print("saved to " + "news/" + name)
+        image.save("news/" + item["name"])
+        print("saved to " + "news/" + index)
 
 
 if __name__ == "__main__":
