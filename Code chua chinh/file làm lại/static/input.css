@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
-*, *:before, *:after {
+/* *, *:before, *:after {
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
     box-sizing: inherit;
-}
+} */
 
 ::-webkit-input-placeholder {
     color: #56585b;
@@ -27,6 +27,7 @@ html {
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
+
     /* background: url(loneliness_man_hood_124412_3840x2160.jpg) no-repeat center center fixed; */
     background-color: rgb(0, 0, 0);
     -webkit-background-size: cover;
@@ -189,13 +190,17 @@ input[type="search"] {
 	overflow: hidden;
 	background: linear-gradient(to top right, darkmagenta 0%, hotpink 100%);
 	color: #333; */
-	font-family: "Open Sans", Helvetica, sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    /* display: grid;
+    grid-row: 1/1/1; */
 }
-
-.center {
+/* .flex{
+    display: table;
+} */
+/* .center {
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	left: 30%;
 	transform: translate(-50%, -50%);
 	width: 300px;
 	height: 260px;
@@ -207,6 +212,58 @@ input[type="search"] {
 	align-items: center;
 	justify-content: space-evenly;
 	flex-direction: column;
+} */
+
+.info{
+    /* display: grid;
+    grid-template-rows: auto auto auto ; */
+    position: absolute;
+    display: flex;
+    top: 20%;
+    left: 50%;
+    /* border-left-color: #ff9933; */
+    border-left: 6px solid #ff9933;
+    width: 600px;
+    height: 500px;
+    padding-left: 20px;
+    display: flex;
+	flex-direction: column;
+}
+
+.info-main-text{
+    color: #ff9933;
+    /* text-transform: uppercase; */
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+.info-text{
+    color: #fff;
+}
+
+.info-text-1{
+    width: 600px;
+    height: 70px;
+
+    /* grid-column: 1 / 3; */
+
+}
+
+.info-text-2{
+    width: 600px;
+    height: 70px;
+
+    /* grid-column: 1 / 3; */
+
+}
+
+.info-text-3{
+    width: 600px;
+    height: 360px;
+
+    /* grid-column: 1 / 3; */
+
 }
 
 .title {
@@ -222,13 +279,13 @@ h1 {
 	color: #666;
 }
 
-.dropzone {
+/* .dropzone {
 	width: 100px;
 	height: 80px;
 	border: 1px dashed #999;
 	border-radius: 3px;
 	text-align: center;
-}
+} */
 
 .upload-icon {
 	margin: 25px 2px 2px 2px;
@@ -242,7 +299,7 @@ h1 {
 	height: 100%;
 	opacity: 0;
 }
-
+/* 
 .btn {
 	display: block;
 	width: 140px;
@@ -254,7 +311,7 @@ h1 {
 	/* box-shadow: 0 3px 0 0 rgb(0, 0, 0); */
 	transition: all 0.3s ease-in-out;
 	font-size: 16px;
-}
+} */
 
 .btn:hover {
     background: rgb(0, 0, 0);
@@ -332,3 +389,118 @@ h1 {
         display: none;
     }
 }
+
+
+.file-upload {
+    background-color: #ffffff;
+    width: 400px;
+    margin-top: 5cm;
+    margin-left: 3cm;
+    padding: 20px;
+  }
+  
+  
+  .file-upload-btn {
+    width: 100%;
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    background: #c97b3b;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #153b82;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .file-upload-btn:hover {
+    background: #dfad43;
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+  
+  .file-upload-btn:active {
+    border: 0;
+    transition: all .2s ease;
+  }
+  
+  .file-upload-content {
+    display: none;
+    text-align: center;
+  }
+  
+  .file-upload-input {
+    position: absolute;
+    margin: 10px;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .image-upload-wrap {
+    margin-top: 20px;
+    border: 4px dashed #d47e37;
+    position: relative;
+  }
+  
+  .image-dropping,
+  .image-upload-wrap:hover {
+    background-color: #e6b329;
+    border: 4px dashed #ffffff;
+  }
+  
+  .image-title-wrap {
+    padding: 0 15px 15px 15px;
+    color: #222;
+  }
+  
+  .drag-text {
+    text-align: center;
+  }
+  
+  .drag-text h3 {
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #bd9b2b;
+    padding: 60px 0;
+  }
+  
+  .file-upload-image {
+    max-height: 200px;
+    max-width: 200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .remove-image {
+    width: 200px;
+    margin: 0;
+    color: #fff;
+    background: #cd4535;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #b02818;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .remove-image:hover {
+    background: #c13b2a;
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+  
+  .remove-image:active {
+    border: 0;
+    transition: all .2s ease;
+  }

@@ -24,10 +24,10 @@
                             <a href="index.html" title="Hotels">Home</a>
                         </li>
                         <li>
-                            <a href="#" title="Flights">About us</a>
+                            <a href="index.html" title="Flights">About us</a>
                         </li>
                         <li>
-                            <a href="#" title="Tours">How it works</a>
+                            <a href="index.html" title="Tours">How it works</a>
                         </li>
                         <!-- <li>
                             <a class="btn" href="#" title="Register / Log In">Donate</a>
@@ -54,8 +54,8 @@
         
         </div> -->
 
-        <div class="frame">
-            <!-- <div class="bg" style="background-image: url(../consula/images/pic/bg.png);"></div> -->
+        <!-- <div class="frame flex">
+            
 
             <div class="center">
                 <div class="title">
@@ -64,12 +64,44 @@
         
                 <div class="dropzone">
                     <img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
-                    <!-- <input type="file" class="upload-input" /> -->
+                    
                     <input class="upload-input" type="file" name="image" id="file" required >
                 </div>
         
                 <button type="button" class="btn" name="uploadbutton">Find for me!</button>
         
+            </div> -->
+
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <div class="file-upload">
+        <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+
+    <div class="image-upload-wrap">
+        <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+        <div class="drag-text">
+            <h3>Your image</h3>
+        </div>
+    </div>
+    <div class="file-upload-content">
+        <img class="file-upload-image" src="#" alt="your image" />
+        <div class="image-title-wrap">
+            <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+        </div>
+    </div>
+    </div>
+
+            <div class="info">
+                <div class="info-text-1">
+                    <h1 class="info-main-text">NAME/ID : <span class="info-text">  </span> </h1>
+                </div>
+
+                <div class="info-text-2">
+                    <h1 class="info-main-text">D.O.B : <span class="info-text"></span> </h1>
+                </div>
+
+                <div class="info-text-3">
+                    <h1 class="info-main-text">INFORMATION : <span class="info-text"></span> </h1>
+                </div>
             </div>
         </div>
 </body>
